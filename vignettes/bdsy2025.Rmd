@@ -1,0 +1,47 @@
+---
+title: "Using the bdsy2025 package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the bdsy2025 package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(bdsy2025)
+```
+
+## Loading multiple bdsy packages
+
+The main function of the bdsy2025 package is to let you load and install all required packages for the causal inference research group at Yale University; this package streamlines the process and ensures all necessary packages are loaded at the beginning of your R session. Let's see how we can accomplish this. First, load the `bdsy2025` package.
+
+Then, use the `load_bdsy()` function to load and, if desired, install the packages associated with the cohorts available in this package. We'll load the causal inference group, ci, so we'll pass "ci" as the argument. load_bdsy() then evaluates if the inputted cohort is available for loading:
+
+```{r}
+load_bdsy("ci")
+```
+
+The default is to install any uninstalled packages, which is communicated by the built-in install_missing = TRUE argument; the function will do this automatically unless instructed otherwise. Uninstalled packages will not be installed by passing install_missing = FALSE:
+
+```{r}
+load_bdsy("ci", install_missing = FALSE)
+```
+
+Currently, the only available cohort in this package is "ci", causal inference. 
+
+```{r}
+load_bdsy("ci")
+```
+
+If unavailable cohorts; unquoted arguments; or otherwise funky arguments are passed, load_bdsy() will message you and inform you of available arguments and their form. For example:
+
+```{r}
+try(load_bdsy(genetics))
+```
