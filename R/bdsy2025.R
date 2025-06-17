@@ -12,7 +12,7 @@
 #'   - The cohort name is not one of the included cohorts in `cohort_packages`.
 #'
 #' @return
-#' Invisible, named logical vector indicating the cohort packages that were successfully loaded (`TRUE`/`FALSE`).
+#' NULL
 #'
 #' @examples
 #' \dontrun{

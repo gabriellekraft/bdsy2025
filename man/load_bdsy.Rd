@@ -11,9 +11,6 @@ load_bdsy(cohort, install_missing = TRUE)
 
 \item{sds_class}{A string indicating the cohort (e.g., \code{"ci"}). Must be one of the defined cohort names in \code{cohort_packages}.}
 }
-\value{
-Invisible, named logical vector indicating the cohort packages that were successfully loaded (\code{TRUE}/\code{FALSE}).
-}
 \description{
 \itemize{
 \item This function automatically loads and optionally installs R packages for the causal inference research group
