@@ -18,6 +18,10 @@ knitr::opts_chunk$set(
 library(bdsy2025)
 ```
 
+## Brief Note
+
+This package was created in an hour; it is messy and not wholly documented. If anything is evil or urgent, email me at kraftgabrielle@gmail.com. 
+
 ## Loading multiple bdsy packages
 
 The main function of the bdsy2025 package is to let you load and install all required packages for the causal inference research group at Yale University; this package streamlines the process and ensures all necessary packages are loaded at the beginning of your R session. Let's see how we can accomplish this. First, load the `bdsy2025` package.
