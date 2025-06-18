@@ -9,6 +9,6 @@
 
 ## code to prepare `cohort_packages` dataset goes here
 cohort_packages <- list(
-  ci = c("Stat2Data", "ggplot2", "broom", "dplyr", "equatiomatic", "performance", "see", "gridExtra", "moderndive", "GGally", "infer", "emmeans", "tidyverse")
+  ci = c("readr", "readxl", "dplyr", "tidyr", "equatiomatic", "performance", "tableone", "knitr", "kableExtra", "infer", "tidyverse")
 )
 usethis::use_data(cohort_packages, overwrite = TRUE)
